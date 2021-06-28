@@ -1,0 +1,44 @@
+.tripInfo .location {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.tripInfo .location > span {
+    color: var(--orange);
+}
+
+.tripInfo .image img {
+    width: 100%;
+    margin-bottom: 0.4rem;
+    border-radius: 0.25rem;
+}
+
+.tripInfo .info {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--orange); 
+}
+
+.tripInfo .info span {
+    font-weight: 300;
+    color: var(--white);
+}
+
+.tripInfo .displayWeather {
+    background-color: var(--boxes);
+    border-radius: 0.25rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: var(--orange);
+    padding: 0.3rem;
+    margin: 0.5rem 0;
+}
+
+.tripWeather .forecast {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;  
+}
+

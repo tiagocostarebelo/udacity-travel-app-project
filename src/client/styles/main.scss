@@ -1,0 +1,137 @@
+#container {
+    width: 100%;
+    height: 85vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    'intro search';
+    // border: 2px solid red;
+}
+
+#container .intro {
+    grid-area: intro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;    
+    // border: 2px solid green;
+}
+
+#container .search {
+    grid-area: search;    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    // border: 2px solid purple;
+}
+
+#container .search form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.4rem;
+}
+
+#results-container {
+    display: none; // <--- this needs to change dinamycally to flex
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;    
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+}
+
+#results-container .tripCard {
+    width: 80%;
+    display: grid;
+    grid-template-areas: 
+    'info' 
+    'details';
+    grid-gap: 0.4rem;
+    background-color: var(--card);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+}
+
+#results-container .tripCard .tripInfo {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#results-container .tripCard .tripWeather {
+    display: flex; 
+    flex-direction: column;  
+    align-items: center;
+    justify-content: space-between;
+}
+
+#results-container .tripCard .tripWeather .forecast {
+    gap: 1em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+footer {
+    grid-area: footer;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* BUTTONS */
+#btn  {
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.25rem;
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+    transition: filter 0.3s;
+    font-weight: bold;
+}
+
+#btn-reset {
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.25rem;
+    background-color: var(--resetBtn);
+    color: var(--white);
+    cursor: pointer;
+    transition: filter 0.3s;
+    font-weight: bold;
+}
+
+#btn:hover, #btn-reset:hover {
+    filter: brightness(1.2);
+    color: var(--dark-blue);
+}
+
+
+@media only screen and (max-width: 1250px) {
+    #container {
+        width: 100%;
+        display: flex;  
+        flex-direction: column;  
+        align-items: center;
+        justify-content: center;   
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+    footer {
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+        <header>
+            <h1>Travel <span>App</span></h1>
+        </header>
+        <main>
+            <div id="container">
+                <section class="intro">
+                    <h2 class="title">Search.<span> Plan.</span> Travel.</h2>
+                    <p>Enter your destination. Set your dates. Plan your next trip.</p></p>
+                </section>
+
+                <section class="search">
+                    <form action="" id="myForm">
+                        <label class="sr-only" for="destination">Destination</label>
+                        <input type="text" id="destination" name="destination" placeholder="Where to?" required>
+                        <label class="sr-only" for="departure">Departure</label>
+                        <input type="date" id="departure" name="departure" required>
+                        <label class="sr-only" for="arrival">Arrival</label>
+                        <input type="date" id="arrival" name="arrival" required>
+                        <a href="#results-container"></a><button id="btn" type="submit" value="Submit">Submit</button></a>
+                    </form>
+                </section>
+                <div class="error-modal-wrapper">
+                    <div class="error-modal">
+                        <h2 class="modal-title">Error</h2>
+                        <p class="error-msg"></p>
+                        <button id="btn" class="confirm"><a href="#">Confirm</a></button>
+                    </div>
+                </div>
+            </div>
+            <div id="results-container">                
+            </div> 
+        </main>
+        <footer>
+            <p class="footerInfo">Design and code &copy 2021 by&nbsp;<a href="#">Tiago Costa Rebelo</a>. All rights reserved.</p>
+        </footer>
+    </div> 
+    
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+       </script>
+</body>
+</html>
