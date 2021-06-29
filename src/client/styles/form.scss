@@ -36,6 +36,18 @@ input:focus {
 }
 
 
+@media only screen and (max-width: 500px){
+    input {
+        // font-family: 'Open Sans', sans-serif;
+        // font-size: 0.8rem;
+        // padding: 0.5rem;
+        // background-color: var(--bginputs);
+        // color: var(--inputs);
+        // border-radius: 0.25rem;
+        // height: 2rem;
+        width: 90%;
+    }
+}
 
 
 
