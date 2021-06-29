@@ -22,3 +22,10 @@ header h1 span {
         justify-content: center;
     }
 }
+
+@media only screen and (max-width: 580px) {
+    header h1{
+        font-size: 2rem;
+        // border: 2px solid red;
+    }
+}

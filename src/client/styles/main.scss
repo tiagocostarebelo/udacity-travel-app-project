@@ -60,6 +60,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 #results-container .tripCard .tripWeather {
@@ -76,8 +77,6 @@
     align-items: center;
     justify-content: space-evenly;
 }
-
-
 
 footer {
     grid-area: footer;
@@ -128,17 +127,12 @@ footer {
 
 @media only screen and (max-width: 750px) {
     footer {
-        height: 5vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         font-size: 0.8rem;
     }
 }
 
-@media only screen and (max-width: 500px) {
-    #container .search {
-            
+@media only screen and (max-width: 580px) {
+    #container .search {            
         display: flex;
         align-items: center;
         justify-content: center;
@@ -154,5 +148,18 @@ footer {
         justify-content: center;
         gap: 0.4rem;
         
+    }
+
+    #results-container .tripCard {
+        width: auto;
+        
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.5rem;
     }
 }

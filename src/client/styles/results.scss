@@ -43,9 +43,27 @@
 }
 
 @media only screen and (max-width: 500px) {
+    
+
+    .tripInfo .image img {
+        width: 100%;
+        margin: 0.2rem;
+        border-radius: 0.25rem;
+    }
+
+    .tripInfo .info {
+        font-size: 0.6rem;
+        font-weight: 400;
+        color: var(--orange); 
+    }
+
+    .tripInfo .displayWeather {
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+
     .tripWeather .forecast {
         font-size: 0.4rem;
-         
     }
 
 }

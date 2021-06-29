@@ -28,10 +28,6 @@ app.listen(PORT, function() {
     console.log(`server is listening on localhost ${PORT}`)
 });
 
-// app.get('/', function (req, res) {
-//     res.sendFile('dist/index.html')
-// })
-
 let projectData = {};
 app.get('/trips', getTrips)
 async function getTrips(req, res) {
