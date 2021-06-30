@@ -29,6 +29,7 @@ app.listen(PORT, function() {
 });
 
 let projectData = {};
+
 app.get('/trips', getTrips)
 async function getTrips(req, res) {
     projectData = {
