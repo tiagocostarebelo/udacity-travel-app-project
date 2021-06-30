@@ -1,9 +1,9 @@
 import { displayErrorMsg } from "./errorMsg";
 
-// const btn = document.getElementById('btn');
-// btn.addEventListener('click', inputValidators);
+const btn = document.getElementById('btn');
+btn.addEventListener('click', inputValidators);
 
-document.getElementById('btn').addEventListener('click', inputValidators);
+// document.getElementById('btn').addEventListener('click', inputValidators);
 
 function inputValidators() {         
     if (
