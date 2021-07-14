@@ -10,16 +10,16 @@ I developed this application by setting the HTML and CSS, setting up the form to
 Installation **Download/clone** this repo 
 Run **npm install** in the terminal to install all required dependencies
 
-**Add .env file and input the api keys:** 
-GEONAMES_API_KEY= your_api_goes_here
-WEATHERBIT_API_KEY= your_api_goes_here
-PIXABAY_API_KEY= your_api_goes_here
+**Add .env file and input the api keys:** <br>
+GEONAMES_API_KEY= your_api_goes_here<br>
+WEATHERBIT_API_KEY= your_api_goes_here<br>
+PIXABAY_API_KEY= your_api_goes_here<br>
 
-Then Run as follow:
-**npm run build-prod** 
-**npm start** to start the app at port 8010
-**npm run build-dev**
+Then Run as follow:<br>
+**npm run build-prod** <br>
+**npm start** to start the app at port 8010<br>
+**npm run build-dev**<br>
 
-**Extend Options used in this project:** 
-Add end date and display length of trip. 
+**Extend Options used in this project:** <br>
+Add end date and display length of trip. <br>
 Pull in an image for the country from Pixabay API when the entered location brings up no results (good for obscure localities).
