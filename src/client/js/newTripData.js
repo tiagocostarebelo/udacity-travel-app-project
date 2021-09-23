@@ -1,7 +1,7 @@
 import {resetResults} from './resetResults';
 
 async function newTripData() {
-    const res = await fetch('https://travel-planer-app.herokuapp.com/trips')
+    const res = await fetch('http://localhost:8010/trips')
     try {
         const tripData = await res.json();      
         displayTrip(tripData);  
