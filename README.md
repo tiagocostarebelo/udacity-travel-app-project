@@ -3,10 +3,10 @@ Final project for the Front End NanoDegree at Udacity.
 
 udacity_travelappproject Final project for the Front End NanoDegree at Udacity.
 
-(Home)['./scrnshots/travelapp_home.png']
-(Search input) ['./scrnshots/travelapp_home_search.png']
-(Results) ['./scrnshots/search_ui.png']
-(Results) ['./scrnshots/search_ui_end.png']
+(Home)[scrnshots/travelapp_home.png]
+(Search input) [scrnshots/travelapp_home_search.png]
+(Results) [scrnshots/search_ui.png]
+(Results) [scrnshots/search_ui_end.png]
 
 Travel-App This is the last project for the Udacity Front-End Web Developer Course. This project required me to build a travel app to obtain a desired trip destination and date from the user and then updating the UI with the weather forecast and an image of the destination using information obtained from three external APIs indicated by Udacity's Project Rubric (Geonames, Weatherbit and Pixabay).
 
