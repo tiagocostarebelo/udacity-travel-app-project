@@ -12,7 +12,7 @@ async function newTripSearch(e) {
 
     if (inputValidators(destination, departure, arrival)) {
         console.log(destination, departure, arrival);
-        const tripInfo = await postData('http://localhost:8010/destination', {destination, departure, arrival});
+        const tripInfo = await postData('https://travel-planer-app.herokuapp.com/destination', {destination, departure, arrival});
         newTripData (tripInfo);
     }
 }
