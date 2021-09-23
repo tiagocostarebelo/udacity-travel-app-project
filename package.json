@@ -4,11 +4,12 @@
   "description": "Project 5 and final project for Udacity Front End NanoDegree where we create a travel app planer with node, express, webpack where the user inserts the location where he'll be travelling, the dates and the app returns the weather forecast as well as a brief description of the place.",
   "main": "server.js",
   "scripts": {
-    "start": "node ./src/server/server.js",
+    "start": "serve -s build",
     "start:dev": "nodemon ./src/server/server.js",
     "build-dev": "webpack serve --config webpack.dev.js --open",
     "build-prod": "webpack --config webpack.prod.js",
-    "test": "jest --detectOpenHandles --forceExit"
+    "test": "jest --detectOpenHandles --forceExit",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "serve": "^12.0.1",
     "webpack": "^5.36.2",
     "webpack-cli": "^4.6.0"
   },
