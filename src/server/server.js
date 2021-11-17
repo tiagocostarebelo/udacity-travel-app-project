@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 //Dependencies and Middleware
 const path = require('path');
-const fetch = require("node-fetch");
+const fetch = require('node-fetch');
 //Cors
 const cors = require('cors');
 const { response } = require('express');
